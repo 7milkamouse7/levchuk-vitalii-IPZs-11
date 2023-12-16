@@ -1,0 +1,56 @@
+document.addEventListener('DOMContentLoaded', function () {
+   
+    const body = document.getElementById('body');
+    const contactFormButton = this.getElementById('contactFormButton');
+    const contactFormButtonClose = this.getElementById('contactFormButtonClose');
+    const contactForm = this.getElementById('contactForm');
+    const formOverlay = this.getElementById('formOverlay');
+  
+   
+    contactFormButton.addEventListener('click', function () {
+        contactForm.classList.toggle('show');
+        formOverlay.classList.toggle('show');
+        body.classList.toggle('fixed');
+      });
+    contactFormButtonClose.addEventListener('click', function () {
+        contactForm.classList.remove('show');
+        formOverlay.classList.remove('show');
+        body.classList.remove('fixed');
+      });
+  });
+  document.addEventListener('DOMContentLoaded', function () {
+    const burgerButton = document.getElementById('burgerButton');
+    const burgerButtonClose = document.getElementById('burgerButtonClose');
+    const menu = document.getElementById('menu');
+
+    burgerButton.addEventListener('click', function () {
+      menu.classList.toggle('show');
+      body.classList.toggle('fixed');
+     
+    });
+    burgerButtonClose.addEventListener('click', function () {
+        menu.classList.remove('show');
+        body.classList.remove('fixed');
+      });
+  });
+ 
+  document.addEventListener('DOMContentLoaded', function () {
+    const categoryButtons = document.querySelectorAll('.buttons__selector');
+    const cards = document.querySelectorAll('.cards__item');
+  
+    categoryButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        const category = this.getAttribute('data-atribute');
+  
+        // Додаємо або видаляємо клас 'hide' в залежності від категорії
+        cards.forEach(card => {
+          if (category === 'All' || card.classList.contains(category)) {
+            card.classList.remove('card-hide');
+     
+          } else {
+            card.classList.add('card-hide');
+          }
+        });
+      });
+    });
+  });

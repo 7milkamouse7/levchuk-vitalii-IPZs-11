@@ -1,0 +1,39 @@
+
+.buttons{
+    &__list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+       
+        margin-bottom: 40px;
+        width: fit-content;
+        @include min(768px){
+            margin-bottom: 30px;
+            
+        }
+        @include min(1200px){
+            margin-bottom: 50px;
+        }       
+    }
+    &__selector{
+        background: #F5F4FA;
+        border: none;
+        padding: 6px 22px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin-left: 8px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        &:hover{
+            background-color: #2196F3;
+            color: #FFFFFF;
+        }
+        @include min(768px){
+        margin-bottom: 0px;
+        }
+    }  
+}

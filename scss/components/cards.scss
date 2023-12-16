@@ -1,0 +1,164 @@
+@import './mixins.scss';
+.main{
+    margin-bottom: 60px;
+    margin-top: 60px;
+    @include min(1200px){
+        margin-bottom: 94px;
+        margin-top: 94px;
+    }
+}
+.cards{
+    .cards__overlay{
+        transform: translateX(-100%);
+        display: none;
+    }
+    &__item:hover{
+        box-shadow: 1px 4px 6px 0px #00000029;
+
+            box-shadow: 0px 4px 4px 0px #0000000F;
+
+            box-shadow: 0px 1px 1px 0px #0000001F;
+        .cards__overlay{
+            visibility: visible;
+            display: flex;
+            height: 65%;
+            width: calc(100% - 48px);
+            transform: translateX(0);
+            
+
+
+            transition: .5s;            
+            @include min(480px){
+                height: 293px;
+                width: 402px;
+            }
+            @include min(768px){
+                width: 304px;
+                height: 230px;
+            }
+            @include min(992px){
+                width: 430px;
+                height: 312px;
+            }
+            @include min(1200px){
+                width: 322px;
+                height: 241px;
+            }
+            @include min(1360px){
+                width: 380px;
+                height:280px;
+            }
+            @include min(1440px){
+                width: 400px;
+                height:293px;
+            } 
+            @include min(1600px){
+                width: 331px;
+                height:294px;
+            }
+            @include min(1700px){
+                width: 463px;
+                height:396px;
+            }
+            @include min(1920px){
+                width: 535px;
+                height:452px;
+            }
+        }
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        
+        
+        @include min(1200px){
+            gap: 30px;
+            justify-content: flex-start;
+        }
+    }
+    &__item{
+        margin: 0 auto;
+        border: 1px solid #EEEEEE;
+        margin-bottom: 30px;
+        position: relative;
+        .item__container{
+            text-decoration: none;
+            color: #212121;
+           
+           
+        }
+        @include min(768px){
+        margin: 0;
+        margin-bottom: 30px;
+        
+       
+        }
+        @include min(1200px){
+            margin-bottom: 0px;
+                    }
+        & img{
+            width: 100%;
+            @include min(1600px){
+                height: 294px;
+            }
+            @include min(1700px){
+                height: 396px;
+            }
+            @include min(1920px){
+                height: 452px;
+            }
+        }
+       
+        & h3{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0.06em;
+        text-align: left;
+        margin: 20px 24px 0px 24px;
+        }
+        & p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.03em;
+            text-align: left;
+            color: #757575;
+            margin: 4px 24px 20px 24px;
+        }
+        @include min(768px){
+            width: calc(50% - 17px);
+           
+           
+        }
+        @include min(1200px){
+            width: calc(33% - 19px);
+           
+           
+        }
+    }
+    &__overlay{
+        display: flex;
+        visibility: hidden;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 0px;
+        height: 0px;
+        background: #2196F3E5;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        align-items: center;
+        padding: 0px 24px;
+        color:  white;
+    }
+}
+
+.card-hide{
+    display: none;
+    
+}

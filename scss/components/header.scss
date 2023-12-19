@@ -338,12 +338,12 @@
                 transition: .5s;
 
                         &::before{
-                        content: url("/img/smartphone-blue.svg");
+                        content: url('/img/smartphone-blue.svg');
 
                         }
                     }
                     &::before{
-                        content: url("/img/smartphone.svg");
+                        content: url('/img/smartphone.svg');
 
                         display: block;
                         height: 14px;

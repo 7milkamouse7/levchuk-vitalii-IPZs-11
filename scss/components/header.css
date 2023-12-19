@@ -118,8 +118,14 @@
   height: 40px;
   margin: 10px 10px 10px 0px;
 }
-.header-button__container :hover svg {
+@media (min-width: 768px) {
+  .header-button__container {
+    display: none;
+  }
+}
+.header-button__container :hover svg, .header-button__container :focus svg {
   fill: #2196F3;
+  transition: 0.5s;
 }
 .header-button__icon {
   width: 40px;
@@ -154,6 +160,7 @@
   display: flex;
   flex-direction: row;
   margin-top: 64px;
+  flex-wrap: wrap;
 }
 .header-social__list a {
   text-decoration: none;
@@ -231,8 +238,9 @@
 .header-nav__burger {
   height: 40px;
 }
-.header-nav__burger:hover svg {
+.header-nav__burger:hover svg, .header-nav__burger:focus svg {
   fill: #2196F3;
+  transition: 0.5s;
 }
 .header-nav__list {
   margin-top: 38px;
@@ -246,6 +254,7 @@
 }
 .header-nav__item:last-child {
   margin-bottom: 0px;
+  margin-right: 0px;
 }
 .header-nav__item a {
   text-decoration: none;
@@ -254,8 +263,9 @@
   align-items: center;
   height: 58px;
 }
-.header-nav__item a:hover {
+.header-nav__item a:hover, .header-nav__item a:focus {
   color: #2196F3;
+  transition: 0.5s;
 }
 @media (min-width: 768px) {
   .header-nav__menu {
@@ -289,8 +299,9 @@
     border-bottom: 4px solid transparent;
     border-top: 4px solid transparent;
   }
-  .header-nav__item:hover {
+  .header-nav__item:hover, .header-nav__item:focus {
     border-bottom: 4px solid #2196F3;
+    transition: 0.5s;
   }
   .header-nav__item a {
     font-size: 14px;
@@ -331,14 +342,15 @@
     align-items: center;
     font-size: 12px;
   }
-  .header__info-item:first-child a:hover {
+  .header__info-item:first-child a:hover, .header__info-item:first-child a:focus {
     color: #2196F3;
+    transition: 0.5s;
   }
-  .header__info-item:first-child a:hover::before {
-    content: url("/img/smartphone-blue.svg");
+  .header__info-item:first-child a:hover::before, .header__info-item:first-child a:focus::before {
+    content: url("../../img/smartphone-blue.svg");
   }
   .header__info-item:first-child a::before {
-    content: url("/img/smartphone.svg");
+    content: url("../../img/smartphone.svg");
     display: block;
     height: 14px;
     width: 10px;
@@ -359,14 +371,15 @@
     flex-direction: row;
     align-items: center;
   }
-  .header__info-item:nth-child(2n) a:hover {
+  .header__info-item:nth-child(2n) a:hover, .header__info-item:nth-child(2n) a:focus {
     color: #2196F3;
+    transition: 0.5s;
   }
-  .header__info-item:nth-child(2n) a:hover::before {
-    content: url("/img/envelope-blue.svg");
+  .header__info-item:nth-child(2n) a:hover::before, .header__info-item:nth-child(2n) a:focus::before {
+    content: url("../../img/envelope-blue.svg");
   }
   .header__info-item:nth-child(2n) a::before {
-    content: url("/img/envelope.svg");
+    content: url("../../img/envelope.svg");
     display: block;
     height: 10px;
     width: 14px;

@@ -20,7 +20,7 @@
                 </a>
             </div>
             <div class="header-button__container">
-                <button class="header__button" id="burgerButton">
+                <button class="header__button" id="burgerButton" type="button">
                     <svg class="header-button__icon">
                         <use xlink:href="./img/sprite.svg#header-menu-button">
                    </svg>
@@ -46,8 +46,8 @@
                 </div>
                <div>
                     <ul class="header__info">
-                        <li class="header__info-item"><a href="">+38 096 111 11 11</a></li>
-                        <li class="header__info-item"><a href="">info@devstudio.com</a></li>
+                        <li class="header__info-item"><a href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+                        <li class="header__info-item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     </ul>
                     <ul class="header-social__list">
                         <li class="header-social__item">
@@ -73,7 +73,7 @@
                 <h1 class="hero__title">
                     Ефективні рішення для вашого бізнесу
                 </h1>
-                <button class="hero__button" id="contactFormButton">
+                <button class="hero__button" id="contactFormButton" type="button">
                     Замовити послугу
                 </button>
                
@@ -144,13 +144,13 @@
             <h2 class="our-work__title">Чим ми займаємося</h2>
             <ul class="our-work__list container">
                 <li class="our-work__item">
-                    <img src="/img/our_work/desktop_apps.jpg" alt="" loading="lazy">
+                    <img src="./img/our_work/desktop_apps.jpg" alt="Desktop Apps" loading="lazy">
                 </li>
                 <li class="our-work__item">
-                    <img src="/img/our_work/mobile_apps.jpg" alt="" loading="lazy">
+                    <img src="./img/our_work/mobile_apps.jpg" alt="Mobie Apps" loading="lazy">
                 </li>
                 <li class="our-work__item">
-                    <img src="/img/our_work/design_solutions.jpg" alt="" loading="lazy">
+                    <img src="./img/our_work/design_solutions.jpg" alt="Design Solutions" loading="lazy">
                 </li>
             </ul>
         </section>
@@ -159,7 +159,7 @@
                 <h2 class="team__title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img class="team__img" src="./img/team/team_igor.jpg" alt="" loading="lazy">
+                    <img class="team__img" src="./img/team/team_igor.jpg" alt="Igor" loading="lazy">
                     <h3 class="item__title">Ігор Дем'яненко</h3>
                     <p class="item__text">Product Designer</p>
                     <div class="social__list social">
@@ -186,7 +186,7 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="team__img" src="./img/team/team_olga.jpg" alt="" loading="lazy">
+                    <img class="team__img" src="./img/team/team_olga.jpg" alt="Olga" loading="lazy">
                     <h3 class="item__title">Ольга Рєпіна</h3>
                     <p class="item__text">Frontend Developer</p>
                     <div class="social__list social">
@@ -213,7 +213,7 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="team__img" src="./img/team/team_kolia.jpg" alt="" loading="lazy">
+                    <img class="team__img" src="./img/team/team_kolia.jpg" alt="Kolia" loading="lazy">
                     <h3 class="item__title">Микола Тарасов</h3>
                     <p class="item__text">Marketing</p>
                     <div class="social__list social">
@@ -240,7 +240,7 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img class="team__img" src="./img/team/team_misha.jpg" alt="" loading="lazy">
+                    <img class="team__img" src="./img/team/team_misha.jpg" alt="Misha" loading="lazy">
                     <h3 class="item__title">Михайло Єрмаков</h3>
                     <p class="item__text">UI Designer</p>
                     <div class="social__list social">
@@ -390,25 +390,26 @@
                 </ul>
             </li>
             <li class="footer__item">
-                <div class="footer-newsletter__container">
-                    <h4>підпишіться на розсилку</h4>
-                    <input type="text" name="" id="" class="footer-newsletter__input" placeholder="E-mail">
-                </div>
-               
-                <button class="footer__subscribe">
-                    Підписатися
-                    <svg class="footer-subscribe__icon footer__icon">
-                        <use xlink:href="./img/sprite.svg#icon-telegram"></use>
-                    </svg>
-                </button>
+                <form action="#" class="footer__item">
+                    <div class="footer-newsletter__container">
+                        <h4>підпишіться на розсилку</h4>
+                        <input type="text" name="" id="" class="footer-newsletter__input" placeholder="E-mail">
+                    </div>
+                   
+                    <button class="footer__subscribe" type="submit">
+                        Підписатися
+                        <svg class="footer-subscribe__icon footer__icon">
+                            <use xlink:href="./img/sprite.svg#icon-telegram"></use>
+                        </svg>
+                    </button>
+                </form>
             </li>
         </ul>
     </footer>
 
 
     <div class="form__overlay" id="formOverlay">
-        <form action="" class="hero__form form" id="contactForm">
-     
+        <div class="hero__form " id="contactForm"> 
             <div class="form__container">
                 <div class="close__container">
                     <button type="button" class="form__close" id="contactFormButtonClose">
@@ -421,53 +422,58 @@
                 <h2 class="form__title">Залиште свої дані, ми вам передзвонимо</h2>
                
             </div>
-            <ul class="form__list">
-                <li class="form__item item">
-                    <input type="text" name="" id="" class="item__input">
-                    <div class="item__container">
-                        <p class="item__text">Ім'я</p>
-                        <svg class="item__svg">
-                            <use xlink:href="./img/sprite.svg#icon-person-black">
-                        </svg>
-                    </div>
-                    
-                </li>
-                <li class="form__item item">
-                    <input type="text" name="" id="" class="item__input">
-                    <div class="item__container">
-                        <p class="item__text">Телефон</p>
-                        <svg class="item__svg">
-                            <use xlink:href="./img/sprite.svg#icon-phone-black">
-                        </svg>
-                    </div>
-                    
-                   
-                </li>
-                <li class="form__item item">
-                    <input type="text" name="" id="" class="item__input">
-                    <div class="item__container">
-                        <p class="item__text">Пошта</p>
-                        <svg class="item__svg">
-                            <use xlink:href="./img/sprite.svg#icon-email-black">
-                        </svg>
-                    </div>
-                  
-                   
-                  
-                </li>
-                <li class="form__item item">
-                    <p class="item__text">Коментар</p>
-                    <textarea name="" id="" cols="30" rows="10 " class="item__input" placeholder="Введіть текст"> </textarea>
-                </li>
-                <li class="form__item item"> 
-                    <input type="checkbox" name="" id="termsCheckbox" class="form__checkbox">
-                    <label for="termsCheckbox">
-                        Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a> 
-                    </label>
-                </li>
-            </ul>
-            <button type="submit" class="hero__submit">Відправити</button>
-        </form>
+            <form action="" class="form" >
+         
+              
+                <ul class="form__list">
+                    <li class="form__item item">
+                        <input type="text" name="" id="" class="item__input">
+                        <div class="item__container">
+                            <p class="item__text">Ім'я</p>
+                            <svg class="item__svg">
+                                <use xlink:href="./img/sprite.svg#icon-person-black">
+                            </svg>
+                        </div>
+                        
+                    </li>
+                    <li class="form__item item">
+                        <input type="text" name="" id="" class="item__input">
+                        <div class="item__container">
+                            <p class="item__text">Телефон</p>
+                            <svg class="item__svg">
+                                <use xlink:href="./img/sprite.svg#icon-phone-black">
+                            </svg>
+                        </div>
+                        
+                       
+                    </li>
+                    <li class="form__item item">
+                        <input type="text" name="" id="" class="item__input">
+                        <div class="item__container">
+                            <p class="item__text">Пошта</p>
+                            <svg class="item__svg">
+                                <use xlink:href="./img/sprite.svg#icon-email-black">
+                            </svg>
+                        </div>
+                      
+                       
+                      
+                    </li>
+                    <li class="form__item item">
+                        <p class="item__text">Коментар</p>
+                        <textarea name="" id="" cols="30" rows="10 " class="item__input" placeholder="Введіть текст"> </textarea>
+                    </li>
+                    <li class="form__item item"> 
+                        <input type="checkbox" name="" id="termsCheckbox" class="form__checkbox">
+                        <label for="termsCheckbox">
+                            Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a> 
+                        </label>
+                    </li>
+                </ul>
+                <button type="submit" class="hero__submit">Відправити</button>
+            </form>
+        </div>
+       
     </div>
 <script src="./js/script.js"></script>
 </body>

@@ -41,6 +41,7 @@ footer{
             margin-bottom: 60px;
             display: flex;
             flex-direction: column;
+            box-sizing: border-box;
             @include min(768px){
                 
                     width: 50%;
@@ -121,16 +122,15 @@ footer{
                 align-items: center;
                 justify-content: center;
                 border-radius: 50%;
-                background: rgba(255, 255, 255, 0.1);
+            transition: .5s;
+            background: rgba(255, 255, 255, 0.1);
 
-                &:hover{
+                &:hover,&:focus{
                     content:'';
                     position: relative;
                     border-radius: 50%;
                     background-color: rgba(33, 150, 243, 1);
-                
-    
-                   
+                    transition: .5s;           
                 }
             }
             
@@ -186,18 +186,23 @@ footer{
         color:rgba(255, 255, 255, 0.6);
         height: 50px;
         font-size: 16px;
-        width: 430px;
+        max-width: 430px;
         outline: none;
         border-radius: 4px;
         padding-left: 16px;
+        transition: .5s;
+        width: calc(100% - 30px);
         &:focus{
             border: 1px solid rgba(255, 255, 255);
             color: #FFFFFF;
+            transition: .5s;
         }
         
     }
     @include min(1200px){
-      
+        &-newsletter__input{
+            width: 328px;
+        }
         &__subscribe{
                 
             margin: 0;
@@ -206,6 +211,13 @@ footer{
         }
         &__socials{
             justify-content: flex-start;
+            a:focus{
+                content:'';
+                position: relative;
+                border-radius: 50%;
+                background-color: rgba(33, 150, 243, 1);
+                transition: .5s;           
+            }
         }
         &__item{
             text-align: start;
@@ -227,6 +239,7 @@ footer{
             
             h4{
                 text-align: start;
+                margin-top: 0px;
             }
            
            

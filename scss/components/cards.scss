@@ -1,33 +1,43 @@
 @import './mixins.scss';
 .main{
-    margin-bottom: 60px;
-    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     @include min(1200px){
-        margin-bottom: 94px;
-        margin-top: 94px;
+        padding-bottom: 94px;
+        padding-top: 94px;
     }
 }
 .cards{
     .cards__overlay{
-        transform: translateX(-100%);
-        display: none;
-    }
-    &__item:hover{
+        transition: ease-out 1s;
+        position: absolute;
+        top: 0px;
+        left: 0;
+    visibility: hidden;
+        background: #2196F3E5;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        align-items: center;
+        padding: 0px 24px;
+        color:  white;
+      
+        height: 0%;
+        transform: scaleY(0);
+        transition: transform 0.4s ease-in-out;
+    }   
+    &__item:hover,:focus{
         box-shadow: 1px 4px 6px 0px #00000029;
-
+        
             box-shadow: 0px 4px 4px 0px #0000000F;
 
             box-shadow: 0px 1px 1px 0px #0000001F;
         .cards__overlay{
-            visibility: visible;
             display: flex;
-            height: 65%;
-            width: calc(100% - 48px);
-            transform: translateX(0);
-            
-
-
-            transition: .5s;            
+            visibility: visible;
+            transform: scaleY(1);
+        transform-origin: bottom;
             @include min(480px){
                 height: 293px;
                 width: 402px;
@@ -71,7 +81,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         position: relative;
-        
+        margin: 0px 15px;
         
         @include min(1200px){
             gap: 30px;
@@ -139,23 +149,7 @@
            
         }
     }
-    &__overlay{
-        display: flex;
-        visibility: hidden;
-        position: absolute;
-        top: 0px;
-        left: 0;
-        width: 0px;
-        height: 0px;
-        background: #2196F3E5;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 0.03em;
-        align-items: center;
-        padding: 0px 24px;
-        color:  white;
-    }
+  
 }
 
 .card-hide{

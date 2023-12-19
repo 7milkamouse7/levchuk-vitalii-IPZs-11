@@ -1677,7 +1677,7 @@ footer .footer-newsletter__input:focus {
     content: url("/img/smartphone-blue.svg");
   }
   .header__info-item:first-child a::before {
-    content: url("/img/smartphone.svg");
+    content: url("smartphone.svg");
     display: block;
     height: 14px;
     width: 10px;
@@ -1703,10 +1703,10 @@ footer .footer-newsletter__input:focus {
     transition: 0.5s;
   }
   .header__info-item:nth-child(2n) a:hover::before, .header__info-item:nth-child(2n) a:focus::before {
-    content: url("/img/envelope-blue.svg");
+    content: url("./envelope-blue.svg");
   }
   .header__info-item:nth-child(2n) a::before {
-    content: url("/img/envelope.svg");
+    content: url("../../img/envelope.svg");
     display: block;
     height: 10px;
     width: 14px;

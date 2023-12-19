@@ -338,12 +338,12 @@
                 transition: .5s;
 
                         &::before{
-                        content: url("../../img/smartphone-blue.svg");
+                        content: url("/img/smartphone-blue.svg");
 
                         }
                     }
                     &::before{
-                        content: url("../../img/smartphone.svg");
+                        content: url("/img/smartphone.svg");
 
                         display: block;
                         height: 14px;
@@ -369,14 +369,14 @@
                 transition: .5s;
 
                         &::before{
-                            content: url('../../img/envelope-blue.svg');
+                            content: url('/img/envelope-blue.svg');
                         }
                     }
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     &::before{
-                        content: url('../../img/envelope.svg');
+                        content: url('/img/envelope.svg');
 
 
                         display: block;

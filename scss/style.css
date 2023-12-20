@@ -1761,6 +1761,10 @@ footer .footer-newsletter__input:focus {
   overflow-x: hidden;
 }
 
+.current-page a {
+  color: #2196F3;
+}
+
 @media (min-width: 768px) {
   .current-page {
     border-bottom: 4px solid #2196F3 !important;

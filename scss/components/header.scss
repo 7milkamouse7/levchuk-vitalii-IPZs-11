@@ -442,6 +442,12 @@
    
 }
 .fixed{overflow-y: hidden; overflow-x: hidden;}
+.current-page{
+    a{
+        color: #2196F3;
+
+    }
+}
 @include min(768px){
     .current-page{
         border-bottom: 4px solid  #2196F3 !important;

@@ -50,12 +50,11 @@ footer{
                     }
                 
             }
-            & span{
+            & a{
                 color: #FFFFFF99;
                 font-size: 14px;
                 margin-bottom: 12px;
                 &:last-child{
-                color: #FFFFFF99;
                     margin-bottom: 0px;
                 }
             }
@@ -138,6 +137,7 @@ footer{
            
 
         }
+     
         &__logo{
             margin: 0;
             font-family: Raleway;
@@ -146,9 +146,12 @@ footer{
             line-height: 31px;
             letter-spacing: 0.03em;
             color:white ;  
-
+            .web-span{
+                color:#2196F3;
+                
+            }
             & span{
-            color:#2196F3 ;
+            color:#2196F3;
 
             margin: 0;
             font-size: 26px;

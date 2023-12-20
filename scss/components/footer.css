@@ -104,13 +104,12 @@ footer .footer__item {
     width: 100%;
   }
 }
-footer .footer__item span {
+footer .footer__item a {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   margin-bottom: 12px;
 }
-footer .footer__item span:last-child {
-  color: rgba(255, 255, 255, 0.6);
+footer .footer__item a:last-child {
   margin-bottom: 0px;
 }
 footer .footer__item:last-child {
@@ -188,6 +187,9 @@ footer .footer__logo {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: white;
+}
+footer .footer__logo .web-span {
+  color: #2196F3;
 }
 footer .footer__logo span {
   color: #2196F3;

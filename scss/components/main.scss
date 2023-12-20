@@ -359,7 +359,9 @@ main{
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
-            margin: 30px 15px;           
+            margin:0px 15px;     
+            margin-top: 30px;    
+           
         }
         &__item{
             border: 1px solid rgba(175, 177, 184, 1);
@@ -391,7 +393,8 @@ main{
                     width: calc(33% - 20px);       
             }
             @include min(1200px){
-                    width: calc(18.6% - 54px);              
+                    width: calc(18.6% - 54px);   
+                    margin-bottom: 0px;           
             }     
             & a{
                 display: flex;

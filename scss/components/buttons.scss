@@ -1,11 +1,11 @@
 
 .buttons{
+    margin: 0px 15px;
     &__list{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         margin: 0 auto;
-        margin: 0px 15px;
         margin-bottom: 40px;
         width: fit-content;
         @include min(768px){
@@ -29,7 +29,7 @@
         margin-bottom: 15px;
         border-radius: 4px;
         transition: .5s;
-
+        color: #212121;
         &:hover,&:focus{
             background-color: #2196F3;
             color: #FFFFFF;

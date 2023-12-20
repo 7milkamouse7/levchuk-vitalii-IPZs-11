@@ -110,6 +110,7 @@ footer .footer__item span {
   margin-bottom: 12px;
 }
 footer .footer__item span:last-child {
+  color: rgba(255, 255, 255, 0.6);
   margin-bottom: 0px;
 }
 footer .footer__item:last-child {

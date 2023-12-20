@@ -584,7 +584,7 @@ main .partners__icon {
   border: none;
 }
 .form__checkbox:checked::after {
-  content: url(/img/arrow.svg);
+  content: url(.././img/arrow.svg);
   width: 14px;
   height: 14px;
   display: block;

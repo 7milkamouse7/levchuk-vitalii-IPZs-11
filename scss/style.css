@@ -642,7 +642,7 @@ main .partners__icon {
   border: none;
 }
 .form__checkbox:checked::after {
-  content: url(/img/arrow.svg);
+  content: url(.././img/arrow.svg);
   width: 14px;
   height: 14px;
   display: block;
@@ -765,12 +765,14 @@ main .partners__icon {
   }
 }
 
+.buttons {
+  margin: 0px 15px;
+}
 .buttons__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin: 0px 15px;
   margin-bottom: 40px;
   width: fit-content;
 }
@@ -797,6 +799,7 @@ main .partners__icon {
   margin-bottom: 15px;
   border-radius: 4px;
   transition: 0.5s;
+  color: #212121;
 }
 .buttons__selector:hover, .buttons__selector:focus {
   background-color: #2196F3;
@@ -1157,6 +1160,7 @@ footer .footer__item span {
   margin-bottom: 12px;
 }
 footer .footer__item span:last-child {
+  color: rgba(255, 255, 255, 0.6);
   margin-bottom: 0px;
 }
 footer .footer__item:last-child {

@@ -519,7 +519,7 @@ main{
         margin-right: 8px; 
         &:checked{
             &::after{
-                content: url(/img/arrow.svg);
+                content: url(.././img/arrow.svg);
                 width: 14px;
                 height: 14px;
                 display: block;
